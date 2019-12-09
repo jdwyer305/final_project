@@ -1,0 +1,413 @@
+/* background image */
+body {
+	background-image: url('images/backyard.jpg');  
+	width: 100%;
+  	height: 100%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed; 
+  	background-size: cover;
+  	outline-color: white;
+  	outline-width: 2px;
+
+}
+
+/* change padding for navbar when in a smaller viewport so it doesn't cover material */
+@media screen and (max-width: 768px) {
+    body { padding-top: 175px; }
+
+}
+/* -------------------------------------------------- */
+
+
+/* Navbar css to make it translucent before scrolling */
+.navbar-default {
+  	transition: 400ms ease;
+  	background: transparent;
+  	border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: white;
+}
+.navbar-default.scrolled {
+  	background-color: #005600;
+  	border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: white;
+}
+/* -----------------*/
+
+
+/* generic nav bar CSS */
+.navbar {
+  	min-height: 80px;
+  	color: white;
+
+}
+
+/* logo in navbar */
+.navbar-brand {
+	padding-left: 0px;
+	padding-top: 4px;
+  	height: 80px;
+  	border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  	line-height: 80px; 
+}
+
+/* font in navbar */
+.nav {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	margin-top: 12px;
+	font-size: 2.25vw;
+	color: white;
+
+}
+
+/* text when hovering and clicking links in navbar */
+.nav.navbar-nav li a {
+	color: white;
+}
+
+.nav.navbar-nav:hover li a {
+	color: white;
+}
+
+.nav.navbar-nav:clicked li a {
+	color: white;
+}
+
+/* ----------------- */
+
+
+/* nav bar hover */
+.nav-buttons {
+	transition: 0.3s ease;
+	color: white;
+	text-decoration: none;
+	padding: 20px 0;
+	margin: 0 20px;
+}
+.nav-buttons:hover {
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	padding: 6px 0;
+}
+/* ----------------- */
+
+/* This is the end of the nav bar */
+
+/* --------------------------------------------------------- */
+
+/* login form borrowed per customer request */
+/* border shadow used for all platforms */
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+
+/*-----------------------------------------------------------*/
+
+/* opacity for text */
+
+div.transbox {
+	border-radius: 5px;
+	margin-top: 90px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: rgba(169,243,169,.8);
+	border: 1px solid black;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+
+/* -------------------------------------------------------- */
+
+/* headers and paragraphs */
+
+h1 {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 3vw;
+	color: #005600;
+}
+
+#big {
+	margin-top: 60px;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 4vw;
+	color: #005600;
+}
+
+#text {
+	text-align:justify;
+	border: 4px solid white;
+	background-color: white;
+	color: #005600;
+	border-radius: 5px;
+	padding:5px;
+	box-shadow: 5px 5px 2.5px grey;
+	font-size: 1.5vw;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#faq {
+	border: 4px solid white;
+	background-color: white;
+	color: #005600;
+	border-radius: 5px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	box-shadow: 5px 5px 2.5px grey;
+	font-size: 1.5vw;
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+#business {
+	border: 4px solid white;
+	background-color: white;
+	color: #005600;
+	border-radius: 5px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	box-shadow: 5px 5px 2.5px grey;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+img {
+	border-radius: 5px;
+}
+
+#scroll {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;	
+}
+
+/*----------------------------------------------------------*/
+
+/* footer */
+#foot {
+	color: white;
+  	background-color: #005600;
+  	padding: 40px;
+  	border-top: 2.5px solid #a9f3a9;
+  	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 2vw;
+}
+
+/* ----------------------------------------------------------- */
+
+/* services page hover effects per customer request */
+
+.hovereffect {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+
+/* overlay effects for hovering photos */
+/* effects for the information overlaying the photos */
+.hovereffect .overlay {
+	position: absolute;
+	overflow: hidden;
+	width: 80%;
+	height: 80%;
+	left: 10%;
+	top: 10%;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	-ms-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+/* text information appears and background opacity increases */
+.hovereffect:hover .overlay {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.hovereffect img {
+	display: block;
+	position: relative;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+	filter: brightness(0.3);
+  	-webkit-filter: brightness(0.3);
+}
+
+.hovereffect h2 {
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	background-color: transparent;
+	color: white;
+	padding: 1em 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,-100%,0);
+	transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+	color: white;
+	padding: 1em 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+#hide{
+	opacity: 0;
+}
+
+/* hide elements when in mobile */
+@media screen and (max-width: 768px) {
+	#hide {
+		opacity: 1;
+	}
+	#scroll {
+		opacity: 0;
+	}
+}
+
+/* --------------------------------------------------- */
+
+/* contact box */
+.well {
+	border-radius: 5px;
+	box-shadow: 5px 5px 2.5px grey;
+}
+
